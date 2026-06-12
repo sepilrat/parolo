@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Sistemas Hidráulicos – Reparación, mantenimiento y venta de equipos oleohidráulicos para la industria. Buenos Aires y GBA.">
+  <meta name="theme-color" content="#0A0A0A">
+
+  <!-- Open Graph -->
+  <meta property="og:title"       content="Sistemas Hidráulicos – Expertos en Oleohidráulica">
+  <meta property="og:description" content="Reparación de cilindros, bombas, válvulas y centrales hidráulicas. Repuestos y diagnóstico técnico. Buenos Aires.">
+  <meta property="og:type"        content="website">
+  <meta property="og:image"       content="img/logo.png">
+
+  <title>Sistemas Hidráulicos – Reparación y Venta de Equipos Oleohidráulicos</title>
+
+  <!-- Preconnect fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;600;700&display=swap">
+
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+<!-- ============================================================
+     NAVBAR
+     ============================================================ -->
+<header>
+  <nav class="navbar" role="navigation" aria-label="Navegación principal">
+    <div class="container navbar__inner">
+
+      <a href="#" class="navbar__logo" aria-label="Sistemas Hidráulicos – Inicio">
+        <img src="img/logo.png" alt="Sistemas Hidráulicos" width="120" height="40">
+      </a>
+
+      <ul class="navbar__menu" role="list">
+        <li><a href="#servicios">Servicios</a></li>
+        <li><a href="#nosotros">Nosotros</a></li>
+        <li><a href="#industrias">Industrias</a></li>
+        <li><a href="#repuestos">Repuestos</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+
+      <div class="navbar__actions">
+        <a href="https://wa.me/5491151617002" class="btn btn--red navbar__cta" target="_blank" rel="noopener noreferrer">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+          WhatsApp
+        </a>
+        <button class="burger" id="burger" aria-label="Abrir menú" aria-expanded="false" aria-controls="drawer">
+          <span class="burger__line"></span>
+          <span class="burger__line"></span>
+          <span class="burger__line"></span>
+        </button>
+      </div>
+
+    </div>
+  </nav>
+
+  <!-- Mobile drawer -->
+  <div class="drawer" id="drawer" role="dialog" aria-label="Menú de navegación">
+    <a href="#servicios"   class="drawer__link">Servicios</a>
+    <a href="#nosotros"    class="drawer__link">Nosotros</a>
+    <a href="#industrias"  class="drawer__link">Industrias</a>
+    <a href="#repuestos"   class="drawer__link">Repuestos</a>
+    <a href="#contacto"    class="drawer__link">Contacto</a>
+    <a href="https://wa.me/5491151617002" class="btn btn--wa btn--full drawer__cta" target="_blank" rel="noopener noreferrer">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+      Escribir por WhatsApp
+    </a>
+  </div>
+</header>
+
+
+<!-- ============================================================
+     HERO
+     ============================================================ -->
+<section id="hero" class="hero">
+  <div class="container">
+    <div class="hero__grid">
+
+      <div class="hero__content">
+        <p class="eyebrow reveal" style="color: rgba(255,255,255,.6);">Especialistas en oleohidráulica</p>
+        <h1 class="hero__title reveal" data-delay="1">
+          POTENCIA<br>SIN <span class="accent">FALLAS</span>
+        </h1>
+        <p class="hero__sub reveal" data-delay="2">
+          Reparación, mantenimiento y venta de equipos oleohidráulicos para la industria. Diagnóstico técnico preciso y repuestos de calidad.
+        </p>
+        <div class="hero__actions reveal" data-delay="3">
+          <a href="#contacto" class="btn btn--red">Pedir presupuesto</a>
+          <a href="#servicios" class="btn btn--ghost-white">Ver servicios</a>
+        </div>
+
+        <div class="hero__stats reveal" data-delay="4">
+          <div class="stat">
+            <div class="stat__num">+<span class="accent" data-count="15">15</span></div>
+            <div class="stat__label">Años de experiencia</div>
+          </div>
+          <div class="stat">
+            <div class="stat__num"><span class="accent" data-count="24">24</span>h</div>
+            <div class="stat__label">Respuesta urgente</div>
+          </div>
+          <div class="stat">
+            <div class="stat__num">+<span class="accent" data-count="500">500</span></div>
+            <div class="stat__label">Equipos reparados</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero__img reveal" data-delay="2" aria-hidden="true">
+        <img src="img/camioneta.jpg" alt="Camioneta de servicio Sistemas Hidráulicos" loading="eager" width="700" height="400">
+        <div class="hero__glow"></div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ============================================================
+     TICKER
+     ============================================================ -->
+<div class="ticker" aria-hidden="true">
+  <div class="ticker__track">
+    <div class="ticker__item">REPARACIÓN DE CILINDROS<span class="ticker__dot"></span></div>
+    <div class="ticker__item">BOMBAS HIDRÁULICAS<span class="ticker__dot"></span></div>
+    <div class="ticker__item">MOTORES OLEOHIDRÁULICOS<span class="ticker__dot"></span></div>
+    <div class="ticker__item">VÁLVULAS Y DISTRIBUIDORAS<span class="ticker__dot"></span></div>
+    <div class="ticker__item">CENTRALES HIDRÁULICAS<span class="ticker__dot"></span></div>
+    <div class="ticker__item">MANGUERAS DE ALTA PRESIÓN<span class="ticker__dot"></span></div>
+    <div class="ticker__item">REPUESTOS Y ACCESORIOS<span class="ticker__dot"></span></div>
+    <div class="ticker__item">MANTENIMIENTO PREVENTIVO<span class="ticker__dot"></span></div>
+    <!-- duplicado para loop continuo -->
+    <div class="ticker__item">REPARACIÓN DE CILINDROS<span class="ticker__dot"></span></div>
+    <div class="ticker__item">BOMBAS HIDRÁULICAS<span class="ticker__dot"></span></div>
+    <div class="ticker__item">MOTORES OLEOHIDRÁULICOS<span class="ticker__dot"></span></div>
+    <div class="ticker__item">VÁLVULAS Y DISTRIBUIDORAS<span class="ticker__dot"></span></div>
+    <div class="ticker__item">CENTRALES HIDRÁULICAS<span class="ticker__dot"></span></div>
+    <div class="ticker__item">MANGUERAS DE ALTA PRESIÓN<span class="ticker__dot"></span></div>
+    <div class="ticker__item">REPUESTOS Y ACCESORIOS<span class="ticker__dot"></span></div>
+    <div class="ticker__item">MANTENIMIENTO PREVENTIVO<span class="ticker__dot"></span></div>
+  </div>
+</div>
+
+
+<!-- ============================================================
+     SERVICIOS — fondo blanco
+     ============================================================ -->
+<section id="servicios" class="services">
+  <div class="container">
+
+    <div class="services__header">
+      <div>
+        <p class="eyebrow reveal" style="color: var(--c-red);">Lo que hacemos</p>
+        <h2 class="title title--lg title--dk reveal" data-delay="1">SERVICIOS<br>ESPECIALIZADOS</h2>
+      </div>
+      <p class="lead lead--dk reveal" data-delay="2">
+        Atendemos todo lo que refiere a sistemas oleohidráulicos, desde el diagnóstico hasta la puesta en marcha.
+      </p>
+    </div>
+
+    <div class="services__grid">
+
+      <article class="service-card reveal">
+        <div class="service-card__num">01</div>
+        <svg class="service-card__icon" viewBox="0 0 44 44" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <rect x="16" y="6" width="12" height="24" rx="3"/>
+          <rect x="19" y="30" width="6" height="8" rx="2"/>
+          <line x1="6" y1="16" x2="16" y2="16"/><circle cx="4" cy="16" r="3"/>
+          <line x1="28" y1="22" x2="38" y2="22"/><circle cx="40" cy="22" r="3"/>
+        </svg>
+        <h3>Reparación de Cilindros</h3>
+        <p>Rectificado y pulido de vástagos, recambio de sellos y retenes. Simple y doble efecto de cualquier medida.</p>
+      </article>
+
+      <article class="service-card reveal" data-delay="1">
+        <div class="service-card__num">02</div>
+        <svg class="service-card__icon" viewBox="0 0 44 44" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <circle cx="22" cy="22" r="14"/><circle cx="22" cy="22" r="6"/>
+          <path d="M22 8V4M22 40v-4M8 22H4M40 22h-4"/>
+          <circle cx="22" cy="22" r="2" fill="currentColor"/>
+        </svg>
+        <h3>Bombas y Motores</h3>
+        <p>Diagnóstico, reconstrucción y ajuste de bombas de engranajes, pistones y paletas. Motores de todo tipo.</p>
+      </article>
+
+      <article class="service-card reveal" data-delay="2">
+        <div class="service-card__num">03</div>
+        <svg class="service-card__icon" viewBox="0 0 44 44" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <rect x="8" y="14" width="28" height="18" rx="3"/>
+          <path d="M16 14v-4M28 14v-4"/>
+          <circle cx="17" cy="23" r="3"/><circle cx="27" cy="23" r="3"/>
+        </svg>
+        <h3>Válvulas Hidráulicas</h3>
+        <p>Revisión y reemplazo de válvulas de control, distribuidoras, de alivio y retención.</p>
+      </article>
+
+      <article class="service-card reveal">
+        <div class="service-card__num">04</div>
+        <svg class="service-card__icon" viewBox="0 0 44 44" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <rect x="6" y="20" width="32" height="14" rx="3"/>
+          <path d="M14 20v-6c0-3 4-6 8-6s8 3 8 6v6"/>
+          <circle cx="22" cy="27" r="4"/>
+          <line x1="12" y1="34" x2="12" y2="38"/><line x1="32" y1="34" x2="32" y2="38"/>
+        </svg>
+        <h3>Centrales Hidráulicas</h3>
+        <p>Diseño, armado y mantenimiento de centrales completas. Soluciones a medida según la aplicación.</p>
+      </article>
+
+      <article class="service-card reveal" data-delay="1">
+        <div class="service-card__num">05</div>
+        <svg class="service-card__icon" viewBox="0 0 44 44" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M8 36C8 36 10 24 22 20C34 16 36 8 36 8"/>
+          <circle cx="8" cy="36" r="4"/><circle cx="36" cy="8" r="4"/>
+          <circle cx="22" cy="22" r="3" fill="currentColor"/>
+        </svg>
+        <h3>Mangueras Alta Presión</h3>
+        <p>Confección a medida en el día. Stock de adaptadores, codos y fitting en todas las medidas.</p>
+      </article>
+
+      <article class="service-card reveal" data-delay="2">
+        <div class="service-card__num">06</div>
+        <svg class="service-card__icon" viewBox="0 0 44 44" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M22 4L26 16L38 16L28 24L32 36L22 28L12 36L16 24L6 16L18 16Z"/>
+        </svg>
+        <h3>Mantenimiento Preventivo</h3>
+        <p>Planes periódicos para evitar paradas de producción. Cambio de fluidos, filtros y análisis de aceite.</p>
+      </article>
+
+    </div>
+  </div>
+
+  <!-- Separador → oscuro -->
+  <div class="sep" style="background: var(--c-white); margin-top: 60px;">
+    <svg viewBox="0 0 1440 60" preserveAspectRatio="none" style="height: 60px;" aria-hidden="true">
+      <polygon points="0,0 1440,60 1440,60 0,60" fill="#161616"/>
+    </svg>
+  </div>
+</section>
+
+
+<!-- ============================================================
+     NOSOTROS — fondo oscuro
+     ============================================================ -->
+<section id="nosotros" class="about">
+  <div class="container">
+    <div class="about__grid">
+
+      <!-- Visual -->
+      <div class="about__visual reveal">
+        <div class="about__imgbox">
+          <img src="img/logo.png" alt="Logo Sistemas Hidráulicos">
+        </div>
+        <div class="about__badge">
+          <strong>+15</strong>
+          <span>años en la industria</span>
+        </div>
+      </div>
+
+      <!-- Texto -->
+      <div>
+        <p class="eyebrow reveal" style="color: var(--c-red);">Por qué elegirnos</p>
+        <h2 class="title title--lg title--lt reveal" data-delay="1">TÉCNICOS,<br>NO VENDEDORES.</h2>
+
+        <ul class="about__list reveal" data-delay="2">
+          <li class="about__item">
+            <div class="about__item-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/></svg>
+            </div>
+            <div>
+              <strong>Diagnóstico honesto</strong>
+              <span>Te decimos qué tiene el equipo antes de presupuestar cualquier trabajo.</span>
+            </div>
+          </li>
+          <li class="about__item">
+            <div class="about__item-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v16"/></svg>
+            </div>
+            <div>
+              <strong>Taller propio equipado</strong>
+              <span>Bancos de prueba, rectificado y tornería en el mismo lugar.</span>
+            </div>
+          </li>
+          <li class="about__item">
+            <div class="about__item-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            </div>
+            <div>
+              <strong>Repuestos con garantía</strong>
+              <span>Genuinos y alternativos seleccionados para cada aplicación.</span>
+            </div>
+          </li>
+          <li class="about__item">
+            <div class="about__item-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+            </div>
+            <div>
+              <strong>Respuesta en el día</strong>
+              <span>Presupuesto sin cargo. Servicio a domicilio para maquinaria fija.</span>
+            </div>
+          </li>
+          <li class="about__item">
+            <div class="about__item-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg>
+            </div>
+            <div>
+              <strong>Trato directo</strong>
+              <span>Hablás siempre con el técnico especialista, sin intermediarios.</span>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Separador → rojo oscuro -->
+  <div class="sep" style="background: var(--c-dark); margin-top: 80px;">
+    <svg viewBox="0 0 1440 60" preserveAspectRatio="none" style="height: 60px;" aria-hidden="true">
+      <polygon points="0,60 1440,0 1440,60" fill="#7A0000"/>
+    </svg>
+  </div>
+</section>
+
+
+<!-- ============================================================
+     INDUSTRIAS — fondo rojo oscuro
+     ============================================================ -->
+<section id="industrias" class="industries">
+  <div class="container">
+
+    <div class="industries__header">
+      <p class="eyebrow reveal" style="color: rgba(255,255,255,.6); justify-content: center;">Sectores que atendemos</p>
+      <h2 class="title title--lg title--lt reveal" data-delay="1" style="text-align: center;">INDUSTRIAS</h2>
+      <p class="lead lead--lt reveal" data-delay="2" style="text-align: center; max-width: 460px; margin: 12px auto 0;">
+        Trabajamos con empresas de todos los sectores que usan equipos oleohidráulicos.
+      </p>
+    </div>
+
+    <div class="industries__grid">
+
+      <div class="industry-card reveal">
+        <svg class="industry-card__icon" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="28" width="32" height="8" rx="2"/><path d="M8 28V16l8-6 8 6v12M24 28V20h8v8"/><rect x="13" y="22" width="6" height="6"/></svg>
+        <h4>Construcción</h4>
+        <p>Maquinaria pesada, excavadoras, grúas</p>
+      </div>
+
+      <div class="industry-card reveal" data-delay="1">
+        <svg class="industry-card__icon" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><ellipse cx="20" cy="28" rx="14" ry="6"/><path d="M6 28V18l14-10 14 10v10"/><circle cx="20" cy="18" r="4"/><path d="M20 14v-6"/></svg>
+        <h4>Agro</h4>
+        <p>Tractores, cosechadoras e implementos</p>
+      </div>
+
+      <div class="industry-card reveal" data-delay="2">
+        <svg class="industry-card__icon" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="12" width="32" height="20" rx="2"/><path d="M4 20h32M12 12V8M20 12V6M28 12V8"/><circle cx="12" cy="26" r="2"/><circle cx="20" cy="26" r="2"/><circle cx="28" cy="26" r="2"/></svg>
+        <h4>Metalmecánica</h4>
+        <p>Prensas, matricería, punzonadoras</p>
+      </div>
+
+      <div class="industry-card reveal" data-delay="3">
+        <svg class="industry-card__icon" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="8" width="28" height="24" rx="2"/><path d="M6 16h28M14 8v24M26 8v24"/></svg>
+        <h4>Logística</h4>
+        <p>Autoelevadores y transpaletas</p>
+      </div>
+
+      <div class="industry-card reveal">
+        <svg class="industry-card__icon" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 4L36 28H4Z"/><circle cx="20" cy="22" r="5"/><line x1="20" y1="10" x2="20" y2="17"/></svg>
+        <h4>Plástico y Caucho</h4>
+        <p>Inyectoras y extrusoras</p>
+      </div>
+
+      <div class="industry-card reveal" data-delay="1">
+        <svg class="industry-card__icon" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="20" cy="20" r="14"/><circle cx="20" cy="20" r="6"/><path d="M20 6v4M20 30v4M6 20h4M30 20h4"/></svg>
+        <h4>Minería</h4>
+        <p>Perforadoras y cintas transportadoras</p>
+      </div>
+
+      <div class="industry-card reveal" data-delay="2">
+        <svg class="industry-card__icon" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 4C10 4 4 12 4 20c0 12 16 18 16 18s16-6 16-18c0-8-6-16-16-16z"/><circle cx="20" cy="20" r="5"/></svg>
+        <h4>Oil & Gas</h4>
+        <p>Válvulas, actuadores y proceso</p>
+      </div>
+
+      <div class="industry-card reveal" data-delay="3">
+        <svg class="industry-card__icon" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="8" y="16" width="24" height="18" rx="2"/><path d="M4 34h32M14 16v-4a6 6 0 0112 0v4"/><circle cx="20" cy="26" r="3"/></svg>
+        <h4>Alimentaria</h4>
+        <p>Llenadoras y empacadoras</p>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Separador → blanco -->
+  <div class="sep" style="background: var(--c-red-dk); margin-top: 80px;">
+    <svg viewBox="0 0 1440 60" preserveAspectRatio="none" style="height: 60px;" aria-hidden="true">
+      <polygon points="0,0 1440,60 1440,60 0,60" fill="#F5F0EB"/>
+    </svg>
+  </div>
+</section>
+
+
+<!-- ============================================================
+     REPUESTOS — fondo blanco
+     ============================================================ -->
+<section id="repuestos" class="stock">
+  <div class="container">
+
+    <div class="stock__header">
+      <div>
+        <p class="eyebrow reveal" style="color: var(--c-red);">Stock disponible</p>
+        <h2 class="title title--lg title--dk reveal" data-delay="1">REPUESTOS<br>Y ACCESORIOS</h2>
+      </div>
+      <p class="lead lead--dk reveal" data-delay="2">
+        Stock permanente de repuestos oleohidráulicos y neumáticos para agilizar su trabajo.
+      </p>
+    </div>
+
+    <div class="stock__grid">
+      <div class="stock-tag reveal"><strong>Sellos y Retenes</strong><p>Kits para cilindros de todas las marcas</p></div>
+      <div class="stock-tag reveal" data-delay="1"><strong>Bombas de Engranajes</strong><p>Simple y doble sector</p></div>
+      <div class="stock-tag reveal" data-delay="2"><strong>Válvulas de Alivio</strong><p>Directas y pilotadas, regulables</p></div>
+      <div class="stock-tag reveal" data-delay="3"><strong>Distribuidoras</strong><p>Monobloc y modulares</p></div>
+      <div class="stock-tag reveal"><strong>Mangueras HP</strong><p>Alta presión, confección en el día</p></div>
+      <div class="stock-tag reveal" data-delay="1"><strong>Filtros Hidráulicos</strong><p>Retorno, presión y succión</p></div>
+      <div class="stock-tag reveal" data-delay="2"><strong>Fitting y Adaptadores</strong><p>BSP, NPT, JIC, métrico</p></div>
+      <div class="stock-tag reveal" data-delay="3"><strong>Aceites Hidráulicos</strong><p>ISO VG 32, 46 y 68</p></div>
+      <div class="stock-tag reveal"><strong>Cilindros Estándar</strong><p>Simple y doble efecto</p></div>
+      <div class="stock-tag reveal" data-delay="1"><strong>Accesorios Neumáticos</strong><p>Filtros FRL, lubricadores</p></div>
+      <div class="stock-tag reveal" data-delay="2"><strong>Electroválvulas</strong><p>12V, 24V, 110V y 220V</p></div>
+      <div class="stock-tag reveal" data-delay="3"><strong>Manómetros</strong><p>Glicerina y seco, hasta 600 bar</p></div>
+    </div>
+
+  </div>
+
+  <!-- Separador → negro -->
+  <div class="sep" style="background: var(--c-white);">
+    <svg viewBox="0 0 1440 60" preserveAspectRatio="none" style="height: 60px;" aria-hidden="true">
+      <polygon points="0,60 1440,0 1440,60" fill="#0A0A0A"/>
+    </svg>
+  </div>
+</section>
+
+
+<!-- ============================================================
+     CONTACTO — fondo negro
+     ============================================================ -->
+<section id="contacto" class="contact">
+  <div class="container">
+    <div class="contact__grid">
+
+      <!-- Info de contacto -->
+      <div>
+        <p class="eyebrow reveal" style="color: var(--c-red);">Hablemos</p>
+        <h2 class="title title--lg title--lt reveal" data-delay="1">PEDÍ TU<br>PRESUPUESTO</h2>
+        <p class="lead lead--lt reveal" data-delay="2" style="margin-block: 12px 28px; max-width: 380px;">
+          Sin cargo. Te respondemos en el día con diagnóstico y presupuesto claro.
+        </p>
+
+        <div class="reveal" data-delay="2">
+          <div class="contact__info-item">
+            <div class="contact__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+            </div>
+            <div>
+              <div class="contact__label">WhatsApp</div>
+              <div class="contact__value"><a href="https://wa.me/5491151617002" target="_blank" rel="noopener noreferrer">11-5161-7002</a></div>
+            </div>
+          </div>
+
+          <div class="contact__info-item">
+            <div class="contact__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            </div>
+            <div>
+              <div class="contact__label">Email</div>
+              <div class="contact__value"><a href="mailto:arielparolo@hotmail.com">arielparolo@hotmail.com</a></div>
+            </div>
+          </div>
+
+          <div class="contact__info-item">
+            <div class="contact__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            </div>
+            <div>
+              <div class="contact__label">Cobertura</div>
+              <div class="contact__value">Buenos Aires y GBA</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact__cta reveal" data-delay="3">
+          <a href="https://wa.me/5491151617002?text=Hola!%20Quiero%20consultar%20sobre%20un%20servicio%20hidráulico." class="btn btn--wa btn--full" target="_blank" rel="noopener noreferrer">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+            Escribir por WhatsApp
+          </a>
+          <a href="mailto:arielparolo@hotmail.com" class="btn btn--ghost-white btn--full">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            Enviar un email
+          </a>
+        </div>
+      </div>
+
+      <!-- Formulario -->
+      <div class="reveal" data-delay="2">
+        <div class="form-box">
+          <h3 class="form-box__title">Contanos tu consulta</h3>
+          <!--
+            PASO 1: Registrate en https://formspree.io
+            PASO 2: Creá un formulario y copiá tu endpoint
+            PASO 3: Reemplazá ACTION_URL por ej: https://formspree.io/f/xyzabc12
+          -->
+          <form id="contact-form" action="ACTION_URL" method="POST" novalidate>
+            <input type="hidden" name="_subject" value="Nueva consulta — Sistemas Hidráulicos">
+            <input type="text" name="_gotcha" style="display: none;" tabindex="-1" autocomplete="off">
+
+            <div class="form-row">
+              <div>
+                <label class="form-label" for="nombre">Nombre</label>
+                <input class="form-input" type="text" id="nombre" name="nombre" placeholder="Tu nombre" required autocomplete="name">
+              </div>
+              <div>
+                <label class="form-label" for="telefono">Teléfono</label>
+                <input class="form-input" type="tel" id="telefono" name="telefono" placeholder="11 1234-5678" autocomplete="tel">
+              </div>
+            </div>
+
+            <label class="form-label" for="email">Email</label>
+            <input class="form-input" type="email" id="email" name="email" placeholder="tu@email.com" required autocomplete="email">
+
+            <label class="form-label" for="servicio">Servicio que necesitás</label>
+            <select class="form-select" id="servicio" name="servicio">
+              <option value="">Seleccioná una opción</option>
+              <option>Reparación de cilindros</option>
+              <option>Bombas y motores</option>
+              <option>Válvulas hidráulicas</option>
+              <option>Central hidráulica</option>
+              <option>Mangueras de alta presión</option>
+              <option>Mantenimiento preventivo</option>
+              <option>Compra de repuestos</option>
+              <option>Otro</option>
+            </select>
+
+            <label class="form-label" for="mensaje">Descripción del problema o consulta</label>
+            <textarea class="form-textarea" id="mensaje" name="mensaje" placeholder="Contanos qué equipo tiene, qué falla presenta o qué necesitás..." required></textarea>
+
+            <button type="submit" class="btn btn--red btn--full" style="padding-block: 16px;">
+              Enviar consulta
+            </button>
+            <p id="form-status" class="form-status" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ============================================================
+     FOOTER
+     ============================================================ -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer__inner">
+      <a href="#" class="footer__logo" aria-label="Inicio">
+        <img src="img/logo.png" alt="Sistemas Hidráulicos" width="100" height="32">
+      </a>
+      <p class="footer__copy">
+        © <span id="footer-year"></span> <span>Sistemas Hidráulicos</span> — Ariel Parolo<br>
+        Reparación y venta de equipos oleohidráulicos · Buenos Aires
+      </p>
+      <nav class="footer__links" aria-label="Links del footer">
+        <a href="#servicios">Servicios</a>
+        <a href="#repuestos">Repuestos</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+    </div>
+  </div>
+</footer>
+
+
+<!-- WhatsApp FAB -->
+<a href="https://wa.me/5491151617002" class="wa-fab" target="_blank" rel="noopener noreferrer" aria-label="Contactar por WhatsApp">
+  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+</a>
+
+
+<script src="js/main.js"></script>
+</body>
+</html>
