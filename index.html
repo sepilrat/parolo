@@ -501,55 +501,6 @@
       </div>
 
       
-        <div class="form-box">
-          <h3 class="form-box__title">Contanos tu consulta</h3>
-          <!--
-            PASO 1: Registrate en https://formspree.io
-            PASO 2: Creá un formulario y copiá tu endpoint
-            PASO 3: Reemplazá ACTION_URL por ej: https://formspree.io/f/xyzabc12
-          -->
-          <form id="contact-form" action="ACTION_URL" method="POST" novalidate>
-            <input type="hidden" name="_subject" value="Nueva consulta — Sistemas Hidráulicos">
-            <input type="text" name="_gotcha" style="display: none;" tabindex="-1" autocomplete="off">
-
-            <div class="form-row">
-              <div>
-                <label class="form-label" for="nombre">Nombre</label>
-                <input class="form-input" type="text" id="nombre" name="nombre" placeholder="Tu nombre" required autocomplete="name">
-              </div>
-              <div>
-                <label class="form-label" for="telefono">Teléfono</label>
-                <input class="form-input" type="tel" id="telefono" name="telefono" placeholder="11 1234-5678" autocomplete="tel">
-              </div>
-            </div>
-
-            <label class="form-label" for="email">Email</label>
-            <input class="form-input" type="email" id="email" name="email" placeholder="tu@email.com" required autocomplete="email">
-
-            <label class="form-label" for="servicio">Servicio que necesitás</label>
-            <select class="form-select" id="servicio" name="servicio">
-              <option value="">Seleccioná una opción</option>
-              <option>Reparación de cilindros</option>
-              <option>Bombas y motores</option>
-              <option>Válvulas hidráulicas</option>
-              <option>Central hidráulica</option>
-              <option>Mangueras de alta presión</option>
-              <option>Mantenimiento preventivo</option>
-              <option>Compra de repuestos</option>
-              <option>Otro</option>
-            </select>
-
-            <label class="form-label" for="mensaje">Descripción del problema o consulta</label>
-            <textarea class="form-textarea" id="mensaje" name="mensaje" placeholder="Contanos qué equipo tiene, qué falla presenta o qué necesitás..." required></textarea>
-
-            <button type="submit" class="btn btn--red btn--full" style="padding-block: 16px;">
-              Enviar consulta
-            </button>
-            <p id="form-status" class="form-status" role="status" aria-live="polite"></p>
-          </form>
-        </div>
-      </div>
-
     </div>
   </div>
 </section>
